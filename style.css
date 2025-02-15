@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap');
+
 body {
     display: flex;
     margin: 0;
@@ -6,6 +8,7 @@ body {
     min-height: 100vh;
     flex-direction: column;
     font-size: 16px; /* Base font size */
+    font-size: 14px; /* Smaller base font size for smaller screens */
 }
 
 body nav {
@@ -35,6 +38,7 @@ main {
     box-sizing: border-box;
     flex: 1;
     background-color: #586b6c;
+    margin-left: 15%; /* Adjust main margin for larger screens */
 }
 
 nav {
@@ -46,6 +50,7 @@ nav {
     align-items: center;
     height: 100vh; /* Full height */
     position: fixed; /* Fixed position */
+    width: 15%; /* Navigator width for larger screens */
     }
 /*nav ul li ul li {
     display: none; /* Hide the sub-menus by default 
@@ -59,6 +64,7 @@ nav ul li:hover ul li {
 
 nav h1 {
     font-size: 1.25rem; /* Responsive font size */
+    font-size: 1.125rem; /* Adjusted font size */
 }
 
 nav img {
@@ -69,6 +75,9 @@ nav img {
 
 nav h2 {
     margin-bottom: 100px;
+    color: #888888;
+    font-family: "Cormorant";
+    font-size: 1.6rem;
 }
 
 nav ul {
@@ -79,42 +88,19 @@ nav ul {
 }
 
 nav li {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 nav a {
     text-decoration: none;
     color: #333;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: #888888;
 }
 
 nav ul li a:hover{
     color: #38c0da;
 }
-
-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-      
-    margin: 0;
-    
-   
-    margin-left: 15%; /* Margin to accommodate the fixed nav */
-    box-sizing: border-box;
-    flex: 1;
-}
-
-.header-image {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-}
-
 
 
 footer {
@@ -126,43 +112,5 @@ footer {
     margin-left: 15%; /* Margin to accommodate the fixed nav */
     margin-top: auto; /* Push footer to the bottom */
     font-size: 1rem; /* Responsive font size */
-}
-
-@media (min-width: 768px) {
-    nav {
-        width: 15%; /* Navigator width for larger screens */
-    }
-    main {
-        margin-left: 15%; /* Adjust main margin for larger screens */
-    }
-    header {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .header-image {
-        align-items: center;
-    }
-}
-
-/* Additional media queries for responsive text */
-@media (max-width: 768px) {
-    body {
-        font-size: 14px; /* Smaller base font size for smaller screens */
-    }
-    nav h1 {
-        font-size: 1.125rem; /* Adjusted font size */
-    }
-    nav a {
-        font-size: 0.875rem; /* Adjusted font size */
-    }
-    section h2 {
-        font-size: 1rem; /* Adjusted font size */
-    }
-    section p {
-        font-size: 0.875rem; /* Adjusted font size */
-    }
-    footer {
-        font-size: 0.875rem; /* Adjusted font size */
-    }
+    font-size: 0.875rem; /* Adjusted font size */
 }
