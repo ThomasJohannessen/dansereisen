@@ -114,3 +114,7 @@ footer {
     font-size: 1rem; /* Responsive font size */
     font-size: 0.875rem; /* Adjusted font size */
 }
+
+#currentpage {
+    color: #38c0da;
+}

@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basic HTML Layout</title>
+    <title>Asia</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleMainContentTwo.css">
 </head>
 <body>
     <nav>
-        <img src="logo hvit-6.webp" alt="Navigator Image">
+        <img src="./resources/logo hvit-6.webp" alt="Navigator Image">
         <h2>Dansereisen</h2>
         <ul>
             <li><a href="./index.html">Forside</a>
@@ -50,7 +51,7 @@
                     <li><a href="#">Page</a></li>
                 </ul>-->
             </li>
-            <li><a href="./asia.html">Asia</a>
+            <li><a id="currentpage" href="./asia.html">Asia</a>
                 <!--<ul>
                     <li><a href="#">Page</a></li>
                 </ul>-->
@@ -67,14 +68,89 @@
             </li>
         </ul>
     </nav>
-    <header>
-        <img src="banner.webp" alt="Large Header Image" class="header-image">
-    </header>
-    <main> 
-        <section id="frontpageMainSection">
-            <h1>Velkommen til Asia!</h1>    
-        </section>
-    </main>    
+
+    <main>
+        <div id="contentheader">
+            <h1>Asia</h1> 
+        </div>
+
+        <div id="contentLeft" class="content">
+            <h2>Kenyansk dans</h2>
+            <img src="kenya.webp" alt="Large Flag Image" class="content-flag-image">
+            <p>
+                Bazokizo ble utgitt i 2016. Låta kan plasseres som populærmusikk, og har fengende, 
+                moderne afrobeats. Noe som er unikt med Bazokizo, er den ikoniske koreografien i musikkvideoen. 
+                Den har blitt danset av utallige danseglade kenyanere, og flere har også lastet opp deres versjoner 
+                på sosiale medier. Det er denne koreografien vi har tatt utgangspunkt i. 
+            </p>
+            <section id="videocontent">
+                <video class="dancevideo" controls>
+                    <source src="movie.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video class="dancevideo" controls>
+                    <source src="movie.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video class="dancevideo" controls>
+                    <source src="movie.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video class="dancevideo" controls>
+                    <source src="movie.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video class="dancevideo" controls>
+                    <source src="movie.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </section>
+            <p>
+                Her kan dere finne sangen:
+
+                Bazokizo (Collo)
+
+                https://open.spotify.com/track/5Ijdpr18s5rFMr0uiI8LNp?si=8215651d559e47af
+            </p> 
+        </div>
+
+        <div id="contentRight" class="content">
+            <h2>Rwandisk dans</h2>
+            <img src="kenya.webp" alt="Large Flag Image" class="content-flag-image">
+            <p>
+                Mange av de tradisjonelle dansene i Rwanda har bevegelser som er inspirert av oksen. Armene brukes til å symbolisere hornene. 
+                I Rwanda er det vanlig for menn og kvinner å danse ulike trinn. Vi skal lære en dans som tradisjonelt sett er for menn. 
+            </p> 
+            <section id="videocontent">
+                <video class="dancevideo" controls>
+                    <source src="./GOPR0292.MP4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video class="dancevideo" controls>
+                    <source src="movie.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video class="dancevideo" controls>
+                    <source src="movie.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video class="dancevideo" controls>
+                    <source src="movie.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video class="dancevideo" controls>
+                    <source src="movie.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </section>
+            <p>
+                Her kan dere finne sangen:
+            </p> 
+            <a href="https://open.spotify.com/track/2zOgAu3OIg3n3H6bQ84IN6?si=4b0ae2f149904797"> Umurangi (Kivumu Musicians) (Spotify)</a>
+        </div>
+
+    </main>
+
     <footer>
         <p>&copy; 2025 Dansereisen</p>
     </footer>
